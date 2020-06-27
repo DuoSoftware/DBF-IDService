@@ -101,7 +101,7 @@ let getDataFromRedis = (field) => {
             if (idData == null) {
                 console.log("No ID data retrieved from redis");
                 
-                finalID = 1;                
+                finalID = 1000;                
                 console.log("New ID: " + finalID);
 
                 redis.SetSessionNonExpire(id_key, finalID).then((data) => {
